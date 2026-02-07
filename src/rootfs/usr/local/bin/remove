@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
-set -eu
+#!/usr/bin/env -S sh -euo pipefail
 # shellcheck disable=SC2068
 sudo pacman -Runss ${@}
