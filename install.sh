@@ -2,7 +2,7 @@
 cd "$(dirname "${0}")"
 # pacman
 sudo pacman -Syu
-sudo pacman -S amd_ucode firefox gdm git gnome-control-center gnome-logs gnome-disk-utility keepassxc less shellcheck shfmt ufw
+sudo pacman -S amd_ucode firefox gdm git gnome-control-center gnome-logs gnome-disk-utility jdk-openjdk keepassxc less shellcheck shfmt ufw
 sudo systemctl mask --now avahi-daemon.service avahi-daemon.socket avahi-dnsconfd.service bluetooth.service bluetooth.target iptables.service ip6tables.service passim.service printer.target ssh-access.target sshd.service sshd@.service sshd-unix-local.socket
 sudo systemctl enable --now gdm ufw
 sudo ufw enable
