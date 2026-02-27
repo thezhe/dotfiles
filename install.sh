@@ -1,4 +1,4 @@
-#!/usr/bin/env -S sh -euo pipefail
+#!/bin/sh -eu
 cd "$(dirname "${0}")"
 # pacman
 sudo pacman -Syu
@@ -14,8 +14,6 @@ sudo ufw enable
     makepkg -si
 )
 yay -S visual-studio-code-bin
-# jbang
-curl -Ls https://sh.jbang.dev | bash -s - app setup
 # rootfs
 sudo cp -frT src/rootfs /
 reboot
