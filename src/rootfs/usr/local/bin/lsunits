@@ -1,2 +1,2 @@
-#!/usr/bin/env -S sh -euo pipefail
+#!/bin/sh -eu
 sudo systemctl list-unit-files

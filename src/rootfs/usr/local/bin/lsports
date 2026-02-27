@@ -1,2 +1,2 @@
-#!/usr/bin/env -S sh -euo pipefail
+#!/bin/sh -eu
 sudo ss -nraep | grep -F -e "$(hostnamectl hostname)" -e '0.0.0.0' -e '::' -e '*:'
